@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/about.css">
+    <title>About</title>
+</head>
+<body>
+    <p>
+      <p>
+        Welcome to our Resume Parser project! This project was developed using Python (Flask) and HTML/CSS.
+        The purpose of this project is to automate the resume filtering process for recruiters. Users can upload 
+        their resumes, which are then parsed and filtered for specific keywords. The parsed resume data is stored 
+        in the Google Firestore database. Recruiters can use the search bar to enter keywords and filter out the 
+        most relevant resumes. This streamlines the candidate selection process, saving time and effort.       
+    </p>
+    <div class="icon-container">
+      <img src="/static/images/python-programming-language-icon.png">
+      <img src="/static/images/flask-logo-icon.png">
+      <img src="/static/images/google-firebase-icon.png">
+      <img src="/static/images/js-icon.png">
+      <img src="/static/images/json-code-icon.png">
+      <img src="/static/images/html-file-format-icon.png">
+      <img src="/static/images/css-file-format-icon.png">
+  </div>  
+  <hr />
+  <button>
+      <a href="{{ url_for('index') }}">Back to Home</a>
+  </button>
+</body>
+</html>

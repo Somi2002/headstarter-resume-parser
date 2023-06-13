@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="/static/login.css">
+    <script src="/static/main.js"></script>
+</head>
+<body>
+    <h1>Login</h1>
+    <form method="POST" action="{{ url_for('login') }}">
+        <div class="password-container">
+            <input type="password" id="password-input" name="passcode" placeholder="Enter passcode" required>
+            <img src="/static/images/eye.png" onclick="togglePasswordVisibility()" class="eye-icon">
+        </div>
+        <button type="submit">Login</button>
+    </form>            
+    <hr>
+    <a href="{{ url_for('index') }}">Back to Home</a>
+</body>
+</html>
